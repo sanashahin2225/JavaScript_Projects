@@ -50,8 +50,16 @@ function display(val){
 
 function output(){
     let x = document.getElementById('textArea').value
-    let y = eval(x)
-    document.getElementById('textArea').value = y
+    if (x == '')
+    {
+        document.getElementById('textArea').value = 'No Value'
+
+    }
+    else{
+        let y = eval(x)
+        document.getElementById('textArea').value = y
+    }
+    
 }
 
 function clr(){
